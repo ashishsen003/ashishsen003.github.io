@@ -13,14 +13,15 @@
 
 :root {
   --color-bg: #1f1b1b;
-  --color-border: linear-gradient(to right, #b2432a, #010101);
   --color-bg-variant: #2a1f1c;
-  --color-primary: #e06432;
+  /* --color-border: linear-gradient(to right, #b2432a, #010101); */
   
-  --color-primary-variant: #e06432;
+  --color-primary: #e06432;
+  --color-primary-variant: #663522;
+
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
-  --color-photo: #ecebed;
+  /* --color-photo: #ecebed; */
 
   --transition: all 400ms ease;
 
@@ -40,24 +41,23 @@ html {
 }
 
 body {
-  /* padding: 0 10rem; */
-  /* margin: auto; */
-  /* border-width: 15px; */
+  border-width: 15px;
   border-style: solid;
 
   /* Create a linear gradient for the border color */
-  border-image: linear-gradient(to right, #b2432a, #010101);
+  border-image: linear-gradient(to left bottom, #b2432a, #010101);
   border-image-slice: 1; /* Ensure the entire border is covered by the gradient */
 
   /* Optional: Set a fallback color for browsers that don't support border-image */
-  border-color: #a33327;
+  border-color: #e06432;
   /* box-shadow: 0 0 0 13px #333; */
+  border-radius: calc(13px - 10px);
   font-family: "Poppins", sans-serif;
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  background-image: url(../src/assets/bg-texture.png);
-  border-radius: 1rem;
+  /* background-image: url(../src/assets/bg-texture.png); */
+  border-radius: 3rem;
 
 }
 
@@ -112,7 +112,7 @@ a:hover {
   display: inline-block;
   color: var(color-primary);
   padding: 0.75rem 1.2rem;
-  border-radius: 0.4rem;
+  border-radius: 1rem;
   cursor: pointer;
   border: 1px solid var(--color-primary);
   transition: var(--transition);
@@ -143,6 +143,9 @@ img {
   section {
     margin-top: 6rem;
   }
+  body {
+    border-width: 10px;
+  }
 }
 
 /* ============= MEDIA QUERIES (SMALL DEVICES) =============== */
@@ -152,5 +155,8 @@ img {
   }
   section > h2 {
     margin-bottom: 2rem;
+  }
+  body {
+    border-width: 5px;
   }
 }
