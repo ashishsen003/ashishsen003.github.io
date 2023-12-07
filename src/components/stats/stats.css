@@ -1,0 +1,108 @@
+.section__subtitle{
+    display: block;
+    text-align: center;
+    font-size: .9rem;
+    margin-top: -2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+#stats-div {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+
+#github-streak-stats{
+    border-radius: 0.3rem;
+    /* border: 1px solid red */
+}
+
+#github-streak-stats-a-tag{
+    border-radius: 0.3rem;
+    /* border: 1px solid green */
+}
+
+#github-stats-card{
+    /* border-radius: 0.5rem; */
+    /* border: 1px solid green */
+}
+
+#github-stats-card-a-tag{
+    /* border-radius: 0.5rem;
+    border: 1px solid green */
+}
+
+#stats-div a:nth-child(1){
+    border: 1px solid rgb(255, 255, 255);
+    /* border-radius: 0.5rem; */
+}
+
+#stats-div a > img{
+    /* border: 1px solid rgb(255, 255, 255); */
+    /* border-radius: 0.5rem; */
+}
+
+#github-lang-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#github-lang-div > a{
+    /* border: 1px solid rgb(255, 255, 255); */
+    /* border-radius: 0.5rem; */
+    /* width: 30%; */
+
+}
+
+#calender-div {
+    margin: auto;
+    /* display: flex;
+    justify-content: center; */
+    margin-bottom: 1rem;
+    padding: 1rem 3rem;
+    width: 80%;
+    border-radius: 0.5rem;
+    background-color: #151515;
+    border: 1px solid rgb(255, 255, 255);
+    /* border: 1px solid red; */
+    /* width: 100vw; */
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 1024px) {
+    #stats-div {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    #calender-div {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+/* For medium devices */
+@media screen and (max-width: 720px) {
+    #github-lang-div {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        /* justify-content: center; */
+        margin-top: 1rem;
+    }
+    #calender-div {
+        /* height: 25vh; */
+    }
+}
+
+@media screen and (max-width: 576px) {
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+}

@@ -2,8 +2,10 @@ import React from 'react'
 import './contact.css'
 import {MdOutlineEmail} from 'react-icons/md'
 import {BsWhatsapp} from 'react-icons/bs'
+import { FaLinkedin } from "react-icons/fa";
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { PiPaperPlaneTiltFill } from "react-icons/pi";
 
 const Contact = () => {
 
@@ -38,8 +40,20 @@ const Contact = () => {
           <article className='contact__option'>
             <BsWhatsapp className='contact__option-icon' />
             <h4>Whatsapp</h4>
-            <h5>+1234567890</h5>
+            <h5>+91-999-9463-234</h5>
             <a href="https://wa.me/+919999463234" target='_blank'>Send a message</a>
+          </article>
+          <article className='contact__option'>
+            <FaLinkedin className='contact__option-icon' />
+            <h4>Linkedin</h4>
+            <h5>ashish-kumar997</h5>
+            <a href="https://www.linkedin.com/in/ashish-kumar997" target='_blank'>Send a message</a>
+          </article>
+          <article className='contact__option'>
+            <FaLinkedin className='contact__option-icon' />
+            <h4>Github</h4>
+            <h5>ashishsen003</h5>
+            <a href="https://github.com/ashishsen003" target='_blank'>Send a message</a>
           </article>
         </div>
         {/* End of contact options */}
@@ -47,7 +61,7 @@ const Contact = () => {
           <input type="text" name="name" placeholder="Your Full Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
           <textarea name="message" rows="7" placeholder='Your message' required></textarea>
-          <button type='submit' className='btn btn-primary'>Send Message</button>
+          <button type='submit' className='send-btn'>Send Message <PiPaperPlaneTiltFill /></button>
         </form>
       </div>
     </section>

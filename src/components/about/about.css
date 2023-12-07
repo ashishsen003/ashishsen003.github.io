@@ -1,3 +1,7 @@
+#about{
+    /* border: 1px solid red; */
+}
+
 .about__container {
     display: grid;
     grid-template-columns: 35% 50%; 
@@ -50,10 +54,10 @@
     cursor: default;
 }
 
-.about__icons{
-    color: var(--color-primary);
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
+.about__icon{
+    color: var(--color-white);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .about__card h5{
@@ -68,6 +72,11 @@
 .about__content p{
     margin: 2rem 0 2.6rem;
     color: var(--color-light);
+}
+
+.btn{
+    background: var(--color-primary);
+    color: var(--color-bg);
 }
 
 /* ============= MEDIA QUERIES (MEDIUM DEVICES) =============== */

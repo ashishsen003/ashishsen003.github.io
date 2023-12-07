@@ -1,8 +1,9 @@
 .navbar{
-    background: var(--color-bg-variant);
+    background: var(--color-bg);
+    /* background: var(--color-white); */
     /* border: 1px dashed red; */
     height: 5rem;
-    width: 100vw;
+    width: 100%;
     /* max-width: 85rem; */
     margin: 0 auto;
     padding: 1rem 2rem;
@@ -14,20 +15,27 @@
     z-index: 3;
 }
 
+.btn-container {
+    display: flex;
+    align-items: center;
+    /* margin-right: 5rem; */
+    /* position: relative; */
+  }
+
 .logo{
     object-fit: cover;
-    height: 3rem;
-    width: 4rem;
+    height: 2.5rem;
+    width: 6rem;
 }
 
 .desktopMenuListItem{
-    margin: 2.5rem;
+    margin: 1.5rem;
     cursor: pointer;
 }
 
 .desktopMenuListItem:hover{
     color: var(--color-white);
-    padding-bottom: 0.1rem;
+    padding-bottom: 0.3rem;
     border-bottom:3px solid var(--color-white);
 }
 
@@ -37,20 +45,21 @@
     justify-content: center;
     align-items: center;
     /* border-radius: 2rem; */
-    padding: 1rem;
+    /* gap: 1rem; */
+    padding: 0.5rem 0.7rem;
 }
 
 .desktopMenuImg{
     object-fit: cover;
     height: 1rem;
     width: 1rem;
-    margin-left: 0.5rem;
+    /* margin-left: 0.5rem; */
 }
 
 .active{
     color: var(--color-white);
     border-bottom: 3px solid var(--color-white);
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.3rem;
 }
 
 .mobMenu{
@@ -73,6 +82,14 @@
     border-radius: 1rem;
 }
 
+.menu__resume-btn{
+    border: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: .3rem;
+}
+
 .listItem{
     background: var(--color-bg);
     color: white;
@@ -83,7 +100,7 @@
 
 
 /* ============= MEDIA QUERIES (SMALL DEVICES) =============== */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 800px) {
     .mobMenu{
         display: flex;
     }

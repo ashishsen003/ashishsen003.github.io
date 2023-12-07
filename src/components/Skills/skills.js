@@ -12,6 +12,8 @@ import { FaGithub } from "react-icons/fa";
 import { FaNode } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
+import { SiMongoose } from "react-icons/si";
+import { SiChakraui } from "react-icons/si";
 
 const Skills = () => {
   return (
@@ -51,7 +53,7 @@ const Skills = () => {
               <article className='experience__details'><IoLogoCss3 className='experience__details-icon' /><h4>CSS</h4></article>
               <article className='experience__details'><FaReact className='experience__details-icon' /><h4>React</h4></article>
               <article className='experience__details'><SiRedux className='experience__details-icon' /><h4>Redux</h4></article>
-              <article className='experience__details'><FaGithub className='experience__details-icon' /><h4>Github</h4></article>
+              <article className='experience__details'><SiChakraui className='experience__details-icon' /><h4>Chakra UI</h4></article>
             </div>
           </div>
           <div className='.experience__backend'>
@@ -60,6 +62,8 @@ const Skills = () => {
               <article className='experience__details'><FaNode className='experience__details-icon' /><h4>Node JS</h4></article>
               <article className='experience__details'><SiExpress className='experience__details-icon' /><h4>Express</h4></article>
               <article className='experience__details'><SiMongodb className='experience__details-icon' /><h4>Mongo DB</h4></article>
+              <article className='experience__details'><FaGithub className='experience__details-icon' /><h4>Github</h4></article>
+              <article className='experience__details'><SiMongoose className='experience__details-icon' /><h4>Mongoose</h4></article>
             </div>
           </div>
 

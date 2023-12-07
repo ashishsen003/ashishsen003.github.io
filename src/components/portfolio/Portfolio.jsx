@@ -1,58 +1,68 @@
 import React from "react";
 import "./portfolio.css";
-import IMG1 from "../../assets/portfolio1.jpg";
-import IMG2 from "../../assets/portfolio2.jpg";
-import IMG3 from "../../assets/portfolio3.jpg";
-import IMG4 from "../../assets/portfolio4.jpg";
+import IMG1 from "../../assets/portfolio1.png";
+import IMG2 from "../../assets/portfolio2.png";
+import IMG3 from "../../assets/portfolio3.png";
+import IMG4 from "../../assets/portfolio4.png";
 import IMG5 from "../../assets/portfolio5.png";
 import IMG6 from "../../assets/portfolio6.jpg";
+import { FaGithub, FaRegPlayCircle } from "react-icons/fa";
+import { VscGlobe } from "react-icons/vsc";
 
 const data = [
   {
     id: 1,
     image: IMG1,
-    title: "Crypto Currency Dashboard & Financial Visualization",
-    github: "https://github.com",
-    demo: "https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization",
+    name: 'Travel Seekers',
+    tech: ['React', 'Redux', 'HTML',  'CSS'],
+    title: "Travel boooking website",
+    github: "https://github.com/ashishsen003/travel-seekers",
+    demo: "https://my-app-six-coral.vercel.app/home",
   },
 
   {
     id: 2,
     image: IMG2,
-    title: "Charts templates & infographics in Figma",
-    github: "https://github.com",
-    demo: "https://dribbble.com/shots/16588766-Orion-UI-kit-Charts-templates-infographics-in-Figma",
+    name: 'Gem Garden',
+    tech: ['React', 'Redux', 'HTML',  'CSS'],
+    title: "Jewellery shopping website",
+    github: "https://github.com/ashishsen003/gem-garden",
+    demo: "https://gemgarden.netlify.app/",
   },
 
   {
     id: 3,
     image: IMG3,
-    title: "Figma dashboard UI kit for data design web apps",
-    github: "https://github.com",
-    demo: "https://dribbble.com/shots/17290917-Eclipse-Figma-dashboard-UI-kit-for-data-design-web-apps",
+    name: 'Edukin',
+    tech: ['Javascript', 'HTML',  'CSS'],
+    title: "Language course website",
+    github: "https://github.com/ashishsen003/edukin-courses",
+    demo: "https://zingy-heliotrope-1fffbb.netlify.app/",
   },
 
   {
     id: 4,
-    image: IMG3,
-    title: "Figma dashboard UI kit for data design web apps",
-    github: "https://github.com",
-    demo: "https://dribbble.com/shots/17290917-Eclipse-Figma-dashboard-UI-kit-for-data-design-web-apps",
+    image: IMG4,
+    name: 'Create Creation',
+    tech: ['Javascript', 'HTML',  'CSS'],
+    title: "Digital servies providing website",
+    github: "https://github.com/ashishsen003/create-creation",
+    demo: "https://vocal-elf-cd0ad4.netlify.app/",
   },
-  {
-    id: 5,
-    image: IMG3,
-    title: "Figma dashboard UI kit for data design web apps",
-    github: "https://github.com",
-    demo: "https://dribbble.com/shots/17290917-Eclipse-Figma-dashboard-UI-kit-for-data-design-web-apps",
-  },
-  {
-    id: 6,
-    image: IMG3,
-    title: "Figma dashboard UI kit for data design web apps",
-    github: "https://github.com",
-    demo: "https://dribbble.com/shots/17290917-Eclipse-Figma-dashboard-UI-kit-for-data-design-web-apps",
-  },
+  // {
+  //   id: 5,
+  //   image: IMG3,
+  //   title: "Figma dashboard UI kit for data design web apps",
+  //   github: "https://github.com",
+  //   demo: "https://dribbble.com/shots/17290917-Eclipse-Figma-dashboard-UI-kit-for-data-design-web-apps",
+  // },
+  // {
+  //   id: 6,
+  //   image: IMG3,
+  //   title: "Figma dashboard UI kit for data design web apps",
+  //   github: "https://github.com",
+  //   demo: "https://dribbble.com/shots/17290917-Eclipse-Figma-dashboard-UI-kit-for-data-design-web-apps",
+  // },
 ];
 
 const Portfolio = () => {
@@ -60,29 +70,33 @@ const Portfolio = () => {
     <section id="portfolio">
       <h2>Projects</h2>
       <div className="container portfolio__container">
-        {data.map(({id, image, title, github, demo})=>{
+        {data.map(({id, image, name, tech, title, github, demo})=>{
             return (
-                <article key={id} className="portfolio__item">
-                <div className="portfolio__item-image">
-                  <img src={image} alt={title} />
-                </div>
-                <h3>{title}</h3>
-                <div className="portfolio__item-cta">
-                  <a
-                    href={github}
-                    className="btn"
-                    target="_blank"
-                  >
-                    Github
-                  </a>
-                  <a
-                    href={demo}
-                    className="btn btn-primary"
-                    target="_blank"
-                  >
-                    Live Demo
-                  </a>
-                </div>
+              <article key={id} className="portfolio__item">
+                  <div className="portfolio__item-image">
+                    <img src={image} alt={title} />
+                  </div>
+                  <h2>{name}</h2>
+                  <p>{title}</p>
+                  {tech.map((el, i)=>{
+                    return <span>{el}</span>
+                  })}
+                  <div className="portfolio__item-cta">
+                    <a
+                      href={github}
+                      className="link__btn"
+                      target="_blank"
+                    >
+                      < FaGithub />
+                    </a>
+                    <a
+                      href={demo}
+                      className="link__btn"
+                      target="_blank"
+                    >
+                      <FaRegPlayCircle />
+                    </a>
+                  </div>
               </article>
             )
         })}

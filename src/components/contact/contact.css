@@ -1,16 +1,23 @@
 /* Check if custom properties are defined */
 .container.contact__container {
-    width: 58%;
+    width: 80%;
     display: grid;
-    grid-template-columns: 30% 58%;
-    gap: 12%;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    /* border: 2px dashed pink; */
 }
 
 /* Check for conflicting styles or external styles */
 .contact__options {
-    display: flex;
-    flex-direction: column;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 50% 50%;
     gap: 1.2rem;
+    /* align-content: center; */
+    /* text-align: center; */
+    /* place-content: center; */
+    /* place-items: center; */
+    /* border: 2px dashed pink; */
 }
 
 .contact__option {
@@ -20,6 +27,11 @@
     text-align: center;
     border: 1px solid transparent;
     transition: var(--transition); /* Check if --transition is defined */
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact__option:hover{
@@ -43,24 +55,54 @@
 form{
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1rem;
 }
 
 input, textarea{
     width: 100%;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
+    padding: 1.2rem;
+    border-radius: 1rem;
     background: transparent;
     border: 2px solid var(--color-primary-variant);
     resize: none;
     color: var(--color-white);
+    font-family: "Poppins", sans-serif;
+}
+
+.send-btn{
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: "Poppins", sans-serif;
+    padding: .8rem;
+    font-size: .9rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+    background: var(--color-primary);
+    color: var(--color-bg);
+    border: 0;
+}
+
+.send-btn:hover{
+    background: var(--color-white);
+    color: var(--color-bg);
 }
 
 /* ============= MEDIA QUERIES (MEDIUM DEVICES) =============== */
 @media screen and (max-width: 1024px) {
     .container.contact__container {
-      grid-template-columns: 1fr;
+      display: flex;
+      flex-direction: column;
       gap: 2rem;
+    }
+    .contact__options {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        margin: auto;
     }
   }
   
@@ -68,6 +110,11 @@ input, textarea{
   @media screen and (max-width: 600px) {
     .container.contact__container {
       width: var(--container-width-sm);
+    }
+    .send-btn{
+        font-size: .8rem;
+        padding: .7rem;
+        gap: 0.3rem;
     }
   }
   

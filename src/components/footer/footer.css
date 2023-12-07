@@ -1,13 +1,31 @@
-footer{
+.footer{
     background: var(--color-primary);
-    padding: 3rem 0;
+    padding: 1rem 0;
     text-align: center;
     font-size: 0.9rem;
     margin-top: 7rem;
+    /* border: 3px solid red    */
 }
 
 footer a{
     color: var(--color-bg);
+    /* padding-top: 2.5rem; */
+}
+
+.logo__div{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 10%;
+    height: 5rem;
+    /* background-color: black; */
+}
+
+.logo__div > img{
+    width: 100%;
+    object-fit: cover;
+    /* border: 1px solid white; */
+
 }
 
 .footer__logo{
@@ -25,26 +43,40 @@ footer a{
     margin: 0 auto 3rem;
 }
 
+.desktopMenulistitem{
+    margin: 0rem;
+    cursor: pointer;
+}
+
+.desktopMenulistitem:hover{
+    color: var(--color-white);
+    /* padding-bottom: 0.1rem; */
+    /* border-bottom:3px solid var(--color-white); */
+}
+
 .footer__socials{
     display: flex;
     justify-content: center;
     gap: 1rem;
     margin-bottom: 4rem;
+    transition: var(--transition);
+    border-radius: 0rem;    
 }
 
 .footer__socials a{
     background: var(--color-bg);
     color: var(--color-white);
     padding: 0.8rem;
-    border-radius: 0.7rem;
+    border-radius: 1rem;
     display: flex;
     border: 1px solid transparent;
+    
 }
 
 .footer__socials a:hover{
     background: transparent;
     color: var(--color-bg);
-    background-color: var(--color-bg);
+    background-color: var(--color-white);
 }
 
 .footer__copyright{
@@ -54,18 +86,30 @@ footer a{
 
 /* ============= MEDIA QUERIES (MEDIUM DEVICES) =============== */
 @media screen and (max-width: 1024px) {
-   
-  }
+    .logo__div{
+        width: 18%;
+    }
   
   /* ============= MEDIA QUERIES (SMALL DEVICES) =============== */
   @media screen and (max-width: 600px) {
-    .permalinks {
-      flex-direction: column;
-      gap: 1.5rem;
+
+    footer{
+        /* height: 40vh; */
     }
+    .footer a{
+        font-size: .7rem;
+    }
+    footer > a:nth-child(1){
+        font-size: 1.5rem;
+    }
+    .logo__div{
+        width: 20%;
+    }
+    
 
     .footer__socials{
         margin-bottom: 2.6rem;
     }
-  }
+}
+}
   

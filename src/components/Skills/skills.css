@@ -60,7 +60,7 @@
     height: 20vh;
     background-color: white;
     
-
+    
 }
 
 
@@ -82,17 +82,21 @@
         font-size: 5vw;
     }
 }
- */
+*/
+
+#skills{
+    /* border: 1px solid red; */
+}
 
 
- .experience__container{
+.experience__container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    
+}
 
- }
-
- .experience__container > div{
+.experience__container > div{
     background: var(--color-bg-variant);
     padding: 2.4rem 5rem;
     border-radius: 2rem;
@@ -116,15 +120,23 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
+    column-gap: .3rem;
+    /* padding: .5rem; */
+
  }
 
  .experience__details{
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    gap: .5rem;
+
+
+    /* border: 1px solid red; */
  }
 
  .experience__details-icon{
-    font-size: 2rem;
+    font-size: 1.8rem;
     /* margin-top: 6px; */
     color: var(--color-primary);
  }
@@ -150,6 +162,13 @@
 /* ============= MEDIA QUERIES (MEDIUM DEVICES) =============== */
 
 @media screen and (max-width: 600px) {
+    .experience__details{
+        font-size: .9rem;
+    }
+
+    .experience__details-icon{
+        font-size: 1.1rem;
+    }
     .experience__container {
         gap: 1rem;
     }
