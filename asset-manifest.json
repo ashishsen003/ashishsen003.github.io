@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.5364dbd1.css",
-    "main.js": "/static/js/main.f974347c.js",
+    "main.css": "/static/css/main.0dfb335d.css",
+    "main.js": "/static/js/main.30fba27a.js",
     "static/media/portfolio4.png": "/static/media/portfolio4.cb7b67b81025831a7390.png",
     "static/media/portfolio2.png": "/static/media/portfolio2.89f80f9d6b092a91eb53.png",
     "static/media/me-about.jpg": "/static/media/me-about.04a29981596bfdc0f27a.jpg",
     "static/media/image.png": "/static/media/image.00cdf3615da8d4c54ace.png",
     "static/media/portfolio1.png": "/static/media/portfolio1.502be135a1589df3ac0e.png",
     "static/media/portfolio3.png": "/static/media/portfolio3.347454c70af65d2b29ae.png",
-    "static/media/Resume.pdf": "/static/media/Resume.6a95688dcca5db9440c3.pdf",
+    "static/media/Ashish-Kumar-Resume.pdf": "/static/media/Ashish-Kumar-Resume.6a95688dcca5db9440c3.pdf",
     "static/media/portfolio5.png": "/static/media/portfolio5.a82ae9a163c1ac5e3a07.png",
     "static/media/me.jpg": "/static/media/me.4a887d511520445520bd.jpg",
     "static/media/portfolio6.jpg": "/static/media/portfolio6.72d1107e313049cf15a7.jpg",
     "static/media/footer-logo.png": "/static/media/footer-logo.4cb5f82d8cc801475edc.png",
     "static/media/ui-design.png": "/static/media/ui-design.c4acd455fc2040eddcc8.png",
     "index.html": "/index.html",
-    "main.5364dbd1.css.map": "/static/css/main.5364dbd1.css.map",
-    "main.f974347c.js.map": "/static/js/main.f974347c.js.map"
+    "main.0dfb335d.css.map": "/static/css/main.0dfb335d.css.map",
+    "main.30fba27a.js.map": "/static/js/main.30fba27a.js.map"
   },
   "entrypoints": [
-    "static/css/main.5364dbd1.css",
-    "static/js/main.f974347c.js"
+    "static/css/main.0dfb335d.css",
+    "static/js/main.30fba27a.js"
   ]
 }
