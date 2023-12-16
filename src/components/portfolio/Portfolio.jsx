@@ -17,7 +17,7 @@ const data = [
     tech: ['React', 'Redux', 'HTML',  'CSS'],
     title: "Travel boooking website",
     github: "https://github.com/ashishsen003/travel-seekers",
-    demo: "https://my-app-six-coral.vercel.app/home",
+    demo: "https://travel-seekers.vercel.app/home",
   },
 
   {
@@ -27,7 +27,7 @@ const data = [
     tech: ['React', 'Redux', 'HTML',  'CSS'],
     title: "Jewellery shopping website",
     github: "https://github.com/ashishsen003/gem-garden",
-    demo: "https://gemgarden.netlify.app/",
+    demo: "https://gemgarden.netlify.app",
   },
 
   {
@@ -37,7 +37,8 @@ const data = [
     tech: ['Javascript', 'HTML',  'CSS'],
     title: "Language course website",
     github: "https://github.com/ashishsen003/edukin-courses",
-    demo: "https://zingy-heliotrope-1fffbb.netlify.app/",
+    demo: "https://edukin-language-learning.netlify.app",
+    
   },
 
   {
@@ -47,7 +48,7 @@ const data = [
     tech: ['Javascript', 'HTML',  'CSS'],
     title: "Digital servies providing website",
     github: "https://github.com/ashishsen003/create-creation",
-    demo: "https://vocal-elf-cd0ad4.netlify.app/",
+    demo: "https://create-creation.netlify.app/",
   },
   // {
   //   id: 5,
