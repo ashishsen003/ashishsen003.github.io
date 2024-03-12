@@ -59,7 +59,8 @@ const Navbar = ()=>{
     setShowMenu(false)
     return (
         window.open(
-          "https://drive.google.com/file/d/1v_9bh0T05iUEkAYackN0mR395ySkQP-J/view?usp=drive_link",
+          // "https://drive.google.com/file/d/1v_9bh0T05iUEkAYackN0mR395ySkQP-J/view?usp=drive_link",
+           'https://drive.google.com/file/d/1ZqVsjJcex75B8w1N8VqQo5INazmy-dCd/view?usp=drive_link',
           "_blank",
           "noreferrer"
         )
