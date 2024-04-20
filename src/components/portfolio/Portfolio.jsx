@@ -14,7 +14,7 @@ const data = [
     id: 1,
     image: IMG6,
     name: "Ashish's Blog",
-    tech: ['React', 'NodeJs', 'ExpressJs', 'MongoDb'],
+    tech: ['React', 'Node.js', 'Express.js', 'MongoDB'],
     title: "Blog website",
     github: "https://github.com/ashishsen003/blog-app",
     demo: "https://blog-app-64zh.onrender.com",
@@ -78,9 +78,11 @@ const Portfolio = () => {
                   </div>
                   <h2>{name}</h2>
                   <p>{title}</p>
-                  {tech.map((el, i)=>{
-                    return <span>{el}</span>
-                  })}
+                  <div className="portfolio__tech">
+                    {tech.map((el, i)=>{
+                      return <span>{el}</span>
+                    })}
+                  </div>
                   <div className="portfolio__item-cta">
                     <a
                       href={github}
