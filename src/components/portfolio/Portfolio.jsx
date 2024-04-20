@@ -5,13 +5,22 @@ import IMG2 from "../../assets/portfolio2.png";
 import IMG3 from "../../assets/portfolio3.png";
 import IMG4 from "../../assets/portfolio4.png";
 import IMG5 from "../../assets/portfolio5.png";
-import IMG6 from "../../assets/portfolio6.jpg";
+import IMG6 from "../../assets/portfolio6.png";
 import { FaGithub, FaRegPlayCircle } from "react-icons/fa";
 import { VscGlobe } from "react-icons/vsc";
 
 const data = [
   {
     id: 1,
+    image: IMG6,
+    name: "Ashish's Blog",
+    tech: ['React', 'NodeJs', 'ExpressJs', 'MongoDb'],
+    title: "Blog website",
+    github: "https://github.com/ashishsen003/blog-app",
+    demo: "https://blog-app-64zh.onrender.com",
+  },
+  {
+    id: 2,
     image: IMG1,
     name: 'Travel Seekers',
     tech: ['React', 'Redux', 'HTML',  'CSS'],
@@ -19,9 +28,8 @@ const data = [
     github: "https://github.com/ashishsen003/travel-seekers",
     demo: "https://travel-seekers.vercel.app/home",
   },
-
   {
-    id: 2,
+    id: 3,
     image: IMG2,
     name: 'Gem Garden',
     tech: ['React', 'Redux', 'HTML',  'CSS'],
@@ -29,9 +37,8 @@ const data = [
     github: "https://github.com/ashishsen003/gem-garden",
     demo: "https://gemgarden.netlify.app",
   },
-
   {
-    id: 3,
+    id: 4,
     image: IMG3,
     name: 'Edukin',
     tech: ['Javascript', 'HTML',  'CSS'],
@@ -40,23 +47,15 @@ const data = [
     demo: "https://edukin-language-learning.netlify.app",
     
   },
-
   {
-    id: 4,
+    id: 5,
     image: IMG4,
-    name: 'Create Creation',
+    name: 'Create creation',
     tech: ['Javascript', 'HTML',  'CSS'],
     title: "Digital servies providing website",
     github: "https://github.com/ashishsen003/create-creation",
     demo: "https://create-creation.netlify.app/",
   },
-  // {
-  //   id: 5,
-  //   image: IMG3,
-  //   title: "Figma dashboard UI kit for data design web apps",
-  //   github: "https://github.com",
-  //   demo: "https://dribbble.com/shots/17290917-Eclipse-Figma-dashboard-UI-kit-for-data-design-web-apps",
-  // },
   // {
   //   id: 6,
   //   image: IMG3,

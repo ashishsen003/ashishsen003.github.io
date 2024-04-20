@@ -9,13 +9,26 @@ import Header from "./components/header/Header";
 import Portfolio from "./components/portfolio/Portfolio";
 import Stats from "./components/stats/Stats";
 import ScrollUp from "./components/scrollup/ScrollUp";
+import { useRef, useState } from "react";
 
 {/* <Intro /> */}
 
 function App() {
+
+  const menuRef = useRef()
+  const [showMenu, setShowMenu] = useState(false);
+
+  const closeMenu = (e)=>{
+    // console.log(menuRef.current, e.target);
+    // if(menuRef.current !== e.target){
+    //   setShowMenu(false)
+    //   // onClose() 
+    // }
+  }
+
   return (
-    <div className="App">
-     <Navbar />
+    <div className="App" ref={menuRef} onClick={closeMenu}>
+     <Navbar showMenu={showMenu} setShowMenu={setShowMenu} />
      <main className="main">
         <Header />
         <About />

@@ -28,8 +28,8 @@ import {Link} from 'react-scroll'
 import Resume from '../../assets/Ashish-Kumar-Resume.pdf'
 import { TbMenuDeep } from "react-icons/tb";
 
-const Navbar = ()=>{
-  const [showMenu, setShowMenu] = useState(false);
+const Navbar = ({showMenu, setShowMenu})=>{
+  // const [showMenu, setShowMenu] = useState(false);
   // const menuRef = useRef(null);
 
   // useEffect(() => {
@@ -67,6 +67,12 @@ const Navbar = ()=>{
       )
   }
 
+  const menu = ()=>{
+    console.log('click');
+    console.log(showMenu);
+    setShowMenu(showMenu ? false : true)
+  }
+
   return (
     <nav className='navbar'>
      <img src={logo} alt='logo' className='logo' onClick={()=>logoFunc()} />
@@ -85,7 +91,7 @@ const Navbar = ()=>{
         </a>
         </div>
 
-        <TbMenuDeep className='mobMenu' onClick={() => setShowMenu(!showMenu)} />
+        <TbMenuDeep className='mobMenu' onClick={() => menu()} />
           {/* <img src={menu} alt='menu' className='mobMenu' /> */}
         <div className='navMenu' style={{display: showMenu ? 'flex' : 'none'}}>
           <Link activeClass='active' to='home' spy={true} smooth={true} offset={-100} duration={300} className='listItem' onClick={()=>setShowMenu(false)}>Home</Link>
