@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.2576d029.css",
-    "main.js": "/static/js/main.6098a02a.js",
+    "main.js": "/static/js/main.b9061fc7.js",
     "static/media/portfolio4.png": "/static/media/portfolio4.cb7b67b81025831a7390.png",
     "static/media/portfolio2.png": "/static/media/portfolio2.89f80f9d6b092a91eb53.png",
     "static/media/Ashish-Kumar-Resume.pdf": "/static/media/Ashish-Kumar-Resume.af54d042fbe80fd89590.pdf",
     "static/media/me-about.jpg": "/static/media/me-about.04a29981596bfdc0f27a.jpg",
     "static/media/image.png": "/static/media/image.00cdf3615da8d4c54ace.png",
     "static/media/portfolio6.png": "/static/media/portfolio6.b3ecfba3a43b806249ec.png",
+    "static/media/portfolio7.png": "/static/media/portfolio7.b29d95ba46fdcb1774d1.png",
     "static/media/portfolio1.png": "/static/media/portfolio1.502be135a1589df3ac0e.png",
     "static/media/portfolio3.png": "/static/media/portfolio3.347454c70af65d2b29ae.png",
     "static/media/portfolio5.png": "/static/media/portfolio5.a82ae9a163c1ac5e3a07.png",
@@ -16,10 +17,10 @@
     "static/media/ui-design.png": "/static/media/ui-design.c4acd455fc2040eddcc8.png",
     "index.html": "/index.html",
     "main.2576d029.css.map": "/static/css/main.2576d029.css.map",
-    "main.6098a02a.js.map": "/static/js/main.6098a02a.js.map"
+    "main.b9061fc7.js.map": "/static/js/main.b9061fc7.js.map"
   },
   "entrypoints": [
     "static/css/main.2576d029.css",
-    "static/js/main.6098a02a.js"
+    "static/js/main.b9061fc7.js"
   ]
 }
