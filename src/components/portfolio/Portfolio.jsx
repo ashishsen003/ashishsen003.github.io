@@ -6,12 +6,22 @@ import IMG3 from "../../assets/portfolio3.png";
 import IMG4 from "../../assets/portfolio4.png";
 import IMG5 from "../../assets/portfolio5.png";
 import IMG6 from "../../assets/portfolio6.png";
+import IMG7 from "../../assets/portfolio7.png";
 import { FaGithub, FaRegPlayCircle } from "react-icons/fa";
 import { VscGlobe } from "react-icons/vsc";
 
 const data = [
   {
     id: 1,
+    image: IMG7,
+    name: "X Clone(mini)",
+    tech: ['Next.js', 'React', 'JavaScript', 'Firebase', 'Tailwind CSS'],
+    title: "X clone with google authentication",
+    github: "https://github.com/ashishsen003/x-next",
+    demo: "https://x-next-drab.vercel.app",
+  },
+  {
+    id: 2,
     image: IMG6,
     name: "Ashish's Blog",
     tech: ['React', 'Node.js', 'Express.js', 'MongoDB'],
@@ -20,7 +30,7 @@ const data = [
     demo: "https://blog-app-64zh.onrender.com",
   },
   {
-    id: 2,
+    id: 3,
     image: IMG1,
     name: 'Travel Seekers',
     tech: ['React', 'Redux', 'HTML',  'CSS'],
@@ -29,7 +39,7 @@ const data = [
     demo: "https://travel-seekers.vercel.app/home",
   },
   {
-    id: 3,
+    id: 4,
     image: IMG2,
     name: 'Gem Garden',
     tech: ['React', 'Redux', 'HTML',  'CSS'],
@@ -38,7 +48,7 @@ const data = [
     demo: "https://gemgarden.netlify.app",
   },
   {
-    id: 4,
+    id: 5,
     image: IMG3,
     name: 'Edukin',
     tech: ['Javascript', 'HTML',  'CSS'],
@@ -47,15 +57,15 @@ const data = [
     demo: "https://edukin-language-learning.netlify.app",
     
   },
-  {
-    id: 5,
-    image: IMG4,
-    name: 'Create creation',
-    tech: ['Javascript', 'HTML',  'CSS'],
-    title: "Digital servies providing website",
-    github: "https://github.com/ashishsen003/create-creation",
-    demo: "https://create-creation.netlify.app/",
-  },
+  // {
+  //   id: 6,
+  //   image: IMG4,
+  //   name: 'Create creation',
+  //   tech: ['Javascript', 'HTML',  'CSS'],
+  //   title: "Digital servies providing website",
+  //   github: "https://github.com/ashishsen003/create-creation",
+  //   demo: "https://create-creation.netlify.app/",
+  // },
   // {
   //   id: 6,
   //   image: IMG3,
@@ -70,16 +80,16 @@ const Portfolio = () => {
     <section id="portfolio">
       <h2>Projects</h2>
       <div className="container portfolio__container">
-        {data.map(({id, image, name, tech, title, github, demo})=>{
+        {data?.map(({id, image, name, tech, title, github, demo})=>{
             return (
               <article key={id} className="portfolio__item">
                   <div className="portfolio__item-image">
-                    <img src={image} alt={title} />
+                    <img src={image} alt={title} style={{objectFit:'contain'}} />
                   </div>
                   <h2>{name}</h2>
                   <p>{title}</p>
                   <div className="portfolio__tech">
-                    {tech.map((el, i)=>{
+                    {tech?.map((el, i)=>{
                       return <span>{el}</span>
                     })}
                   </div>

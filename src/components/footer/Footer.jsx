@@ -21,7 +21,7 @@ const Footer = () => {
           <Link to='home' spy={true} smooth={true} offset={-100} duration={300} className='desktopMenulistitem'>Home</Link>
           <Link to='about' spy={true} smooth={true} offset={-100} duration={300} className='desktopMenulistitem'>About</Link>
           <Link to='skills' spy={true} smooth={true} offset={-100} duration={300} className='desktopMenulistitem'>Skills</Link>
-          <Link to='portfolio' spy={true} smooth={true} offset={-100} duration={300} className='desktopMenulistitem'>Portfolio</Link>
+          <Link to='portfolio' spy={true} smooth={true} offset={-100} duration={300} className='desktopMenulistitem'>Projects</Link>
           <Link to='contact' spy={true} smooth={true} offset={-100} duration={300} className='desktopMenulistitem' style={{border: '0'}}>Contact</Link>
         </ul>
 

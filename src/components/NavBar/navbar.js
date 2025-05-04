@@ -81,7 +81,7 @@ const Navbar = ({showMenu, setShowMenu})=>{
           <Link activeClass='active' to='home' spy={true} smooth={true} offset={-100} duration={300} className='desktopMenuListItem'>Home</Link>
           <Link activeClass='active' to='about' spy={true} smooth={true} offset={-100} duration={300} className='desktopMenuListItem'>About</Link>
           <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-100} duration={300} className='desktopMenuListItem'>Skills</Link>
-          <Link activeClass='active' to='portfolio' spy={true} smooth={true} offset={-100} duration={300} className='desktopMenuListItem'>Portfolio</Link>
+          <Link activeClass='active' to='portfolio' spy={true} smooth={true} offset={-100} duration={300} className='desktopMenuListItem'>Projects</Link>
           <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-100} duration={300} className='desktopMenuListItem'>Contact</Link>
         </div>
         <div className='btn-container'>

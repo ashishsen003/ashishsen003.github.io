@@ -18,7 +18,7 @@ const Contact = () => {
     .then((result) => {
       console.log(result.text);
       e.target.reset()
-      alert('Email Sent !')
+      alert('Email Sent!')
       }, (error) => {
           console.log(error.text);
       });
@@ -35,12 +35,12 @@ const Contact = () => {
             <MdOutlineEmail className='contact__option-icon' />
             <h4>Email</h4>
             <h5>ashishsen997@gmail.com</h5>
-            <a href="mailto:ashishsen997@gmail.com" target='_blank'>Send a message</a>
+            <a href="mailto:ashishsen997@gmail.com" target='_blank'>Send a mail</a>
           </article>
           <article className='contact__option'>
             <BsWhatsapp className='contact__option-icon' />
             <h4>Whatsapp</h4>
-            <h5>+91-999-9463-234</h5>
+            <h5>+91 99994 63234</h5>
             <a href="https://wa.me/+919999463234" target='_blank'>Send a message</a>
           </article>
           <article className='contact__option'>
