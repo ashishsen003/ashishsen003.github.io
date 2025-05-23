@@ -60,7 +60,8 @@ const Navbar = ({showMenu, setShowMenu})=>{
     return (
         window.open(
           //  'https://drive.google.com/file/d/1ZqVsjJcex75B8w1N8VqQo5INazmy-dCd/view?usp=drive_link',
-          'https://drive.google.com/file/d/16Xefo6z9TWJPRjeywMOApu_N5lBxsH8S/view?usp=sharing',
+          // 'https://drive.google.com/file/d/16Xefo6z9TWJPRjeywMOApu_N5lBxsH8S/view?usp=sharing',
+          'https://drive.google.com/file/d/1as_nPgHCvT_s5nh8TT4-3JLGEE4JRjKh/view?usp=sharing',
           "_blank",
           "noreferrer"
         )
